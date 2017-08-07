@@ -1,5 +1,6 @@
-//command + enter - avalia a linha onde o cursor está
-//command + .     - desliga o som
+//ligar o servidor
+//command + enter       - avalia a linha onde o cursor está
+//command + "." (ponto) - desliga o som
 
 {LFSaw.ar(freq:MouseX.kr(100, 500), mul:0.1)!2}.play
 
@@ -8,8 +9,6 @@
 {SinOsc.ar(freq:SinOsc.kr(freq:3).range(300, 500), mul:0.1)!2}.play
 
 {LFTri.ar(freq:LFNoise0.kr(freq:4).range(500, 1000), mul:0.1)!2}.play;
-
-{LFPulse.ar(freq:Line.kr(start:100, end:0, dur:0.2), mul:0.1)!2}.play
 
 {SinOsc.ar(freq:XLine.kr(200, 1000, 10), mul:Saw.ar(MouseX.kr(1, 10), mul:0.1))!2}.play
 
