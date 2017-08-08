@@ -15,4 +15,3 @@
 {LPF.ar(Gendy1.ar(minfreq:400, maxfreq:420), LFTri.kr(1).range(100, 1500), mul:0.1)!2}.play
 
 {Ringz.ar(Dust.ar(20), MouseX.kr(2000, 2900), mul:0.1)!2}.play
-
