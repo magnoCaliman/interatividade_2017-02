@@ -1,7 +1,7 @@
 //isso é um comentário sobre o código
 
-//comentários servem para o seu eu do presente deixar
-//recados para o seu eu do futuro
+//comentários servem para o seu eu do presente
+//deixar recados para o seu eu do futuro
 
 //supercollider não avalia o documento inteiro de uma única vez.
 //é possível interpretar cada função, cada instrução, individualmente
@@ -15,7 +15,7 @@ rrand(0.0, 1.0)
 //como se dá essa leitura no Processing?
 
 s.boot //liga o servidor. sem isso, nada funciona...
-s.quit //desliga o servidor. atalho Ctrl + "."(ponto) (ctrl para Win e Linux / command para Mac)
+s.quit //desliga o servidor
 
 {
 	//aqui dentro, vai rodar
@@ -24,6 +24,7 @@ s.quit //desliga o servidor. atalho Ctrl + "."(ponto) (ctrl para Win e Linux / c
 {SinOsc.ar(freq:400, mul:0.1)}.play
 
 //alguns geradores de som...
+//command + "." (ponto) - desliga o som!
 
 //osciladores
 {SinOsc.ar(freq:400, mul:0.1)}.play //forma de onda senoidal
@@ -45,7 +46,7 @@ rrand(200, 300) //gera um número entre 200 e 300
 //outras funções interessantes para usar como argumentos dos geradores de som
 {MouseX.kr(minval:10, maxval:20).poll}.play
 {MouseY.kr(minval:100, maxval:200).poll}.play
-{Line.kr(start:10, end:100, dur:2).poll}.play
+{Line.kr(start:10, end:100, dur:10).poll}.play
 
 {Saw.ar(freq:MouseX.kr(minval:200, maxval:500), mul:0.1)}.play
 {BrownNoise.ar(mul:MouseY.kr(minval:0.1, maxval:0.8))}.play
@@ -56,8 +57,8 @@ rrand(200, 300) //gera um número entre 200 e 300
 //maneira simples de rodar duas funções simultaneamente
 
 (
-{Saw.ar(freq:300, mul:0.1)}.play; //agora com ponto e vírgula depois do play!
-{Saw.ar(freq:300.5, mul:0.1)}.play;
+{SinOsc.ar(freq:300, mul:0.4)}.play; //agora com ponto e vírgula depois do play!
+{SinOsc.ar(freq:300.5, mul:0.4)}.play;
 )
 
 (
@@ -68,7 +69,7 @@ rrand(200, 300) //gera um número entre 200 e 300
 (
 {Saw.ar(freq:Line.kr(start:100, end:rrand(700, 800), dur:3), mul:0.2)}.play;
 {Saw.ar(freq:Line.kr(start:100, end:rrand(700, 800), dur:3), mul:0.2)}.play;
-{Saw.ar(freq:Line.kr(start:100, end:rrand(700, 800), dur:3), mul:0.2)}.play;
+{Saw.ar(freq:Line.kr(start:100, end:rrand(700, 8000), dur:8), mul:0.2)}.play;
 {Saw.ar(freq:Line.kr(start:100, end:rrand(700, 800), dur:3), mul:0.2)}.play;
 {Saw.ar(freq:Line.kr(start:100, end:rrand(700, 800), dur:3), mul:0.2)}.play;
 )
