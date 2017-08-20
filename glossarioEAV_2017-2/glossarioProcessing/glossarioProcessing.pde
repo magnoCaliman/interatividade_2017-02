@@ -12,3 +12,35 @@ point();
 line();
 rect();
 ellipse();
+
+///
+
+void setup()
+{
+
+}
+
+void draw()
+{
+
+}
+
+fill();
+random();
+
+mouseX
+mouseY
+
+rectMode(CENTER);
+
+println();
+noLoop();
+
+stroke();
+strokeWeight();
+noStroke();
+
+frameRate();
+
+width
+height
