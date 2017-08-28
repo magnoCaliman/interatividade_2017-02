@@ -44,3 +44,14 @@ frameRate();
 
 width
 height
+
+///
+
+abs();
+constrain();
+% //modulo: https://processing.org/reference/modulo.html
+
+///
+
+int 
+float
