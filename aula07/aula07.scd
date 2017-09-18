@@ -75,7 +75,7 @@ s.volume.gui
 
 // como modificar esse exemplo, de modo que a posição do mouse
 // modifique o tempo de decay do filtro Ringz, mas que esse tempo
-// seja diferente para um dos três filtros?
+// seja diferente para cada um dos três filtros?
 
 
 (
