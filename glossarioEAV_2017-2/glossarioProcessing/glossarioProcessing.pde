@@ -55,3 +55,27 @@ constrain();
 
 int 
 float
+
+///
+
+if()
+{
+
+}
+else
+{
+
+}
+
+&& //(operador lógico AND) - https://processing.org/reference/logicalAND.html
+|| //(operador lógico OR) - https://processing.org/reference/logicalOR.html
+== //(igualdade) - https://processing.org/reference/equality.html
+
+mousePressed
+mouseButton
+
+true / false
+RIGHT / LEFT
+
+translate()
+constrain()
