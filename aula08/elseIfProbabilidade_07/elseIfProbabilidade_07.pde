@@ -19,9 +19,9 @@ void draw()
   }
   else if (dado > 0.125) //0.125 = 1/8
   {
-    println(dado + " - " + "0.125"); //0.0625 = 1/16
+    println(dado + " - " + "0.125"); 
   }
-  else if (dado > 0.0625) 
+  else if (dado > 0.0625) //0.0625 = 1/16
   {
     println(dado + " - " + "0.0625");
   }
