@@ -13,5 +13,5 @@ void loop()
   brilhoLed++; // brilhoLed++ == brilhoLed = brilhoLed + 1
   
   Serial.println(brilhoLed);
-  delay(5);
+  delay(100);
 }

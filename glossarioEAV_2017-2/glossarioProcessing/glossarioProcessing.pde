@@ -79,3 +79,8 @@ RIGHT / LEFT
 
 translate()
 constrain()
+
+while()
+{}
+
+frameCount

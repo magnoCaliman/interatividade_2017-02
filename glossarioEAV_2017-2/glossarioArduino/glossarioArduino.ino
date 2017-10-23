@@ -14,3 +14,12 @@ digitalRead()
 
 analogRead()
 map()
+
+digitalWrite()
+analogWrite()
+
+if()
+{}
+
+while()
+{}

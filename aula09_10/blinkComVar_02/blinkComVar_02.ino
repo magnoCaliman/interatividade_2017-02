@@ -9,7 +9,8 @@ void setup()
 
 void loop()
 {
-  numAleatorio = random(50, 300);
+  numAleatorio = random(50, 400);
+  
   
   digitalWrite(pinoLED, HIGH);
   delay(numAleatorio);
